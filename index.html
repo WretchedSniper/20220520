@@ -21,20 +21,30 @@
         }
 
         h2 {
-            font-size: 220%;
+            font-size: 200%;
             font-weight: 400;
+        }
+
+        h3 {
+            font-size: 150%;
+            font-weight: 400;
+        }
+
+        h4 {
+            font-size: 70%;
+            font-weight: 300;
         }
 
         .content {
             position: absolute;
             width: 100%;
             top: 40%;
-            transform: translate(0, -50%);
+            transform: translate(0, -30%);
             text-align: center;
         }
 
         .timer {
-            font-size: 180%;
+            font-size: 200%;
             line-height: 1.5;
             margin: 1em 0;
         }
@@ -47,16 +57,22 @@
 
 <body>
     <div class="content">
-        <h2>最爱的果果，认识你已经</h2>
+        <h2>亲爱的果果，认识你已经</h2>
         <div class="timer">
-            <b id="d"></b> Days <b id="h"></b> Hours <b id="m"></b> Minutes <b id="s"></b> Seconds
+            <b id="d"></b> 天 <b id="h"></b> 小时 <b id="m"></b> 分钟 <b id="s"></b> 秒
         </div>
+        <h3>600天不长不短，我们相识、相知、相爱，也许很快会相许</h3>
+        <h3>遇到你，是我一生中最幸运的事</h3>
+        <h3>我会永远做你最可爱、最可靠、最强大的瓜哥</h3>
+        <h3>爱&nbsp你&nbsp一&nbsp生&nbsp一&nbsp世</h3>
+        <h3>5201314</h3>
+        <h4>快打开支付宝，领取520专属惊喜！</h4>
     </div>
 
     <script>
         function timer() {
             var start = new Date(2020, 8, 26);
-            var t = new Date() - start - 15 * 60 * 60 * 1000;
+            var t = new Date() - start - 9 * 60 * 60 * 1000;
             var h = ~~(t / 1000 / 60 / 60 % 24);
             if (h < 10) {
                 h = "0" + h;
